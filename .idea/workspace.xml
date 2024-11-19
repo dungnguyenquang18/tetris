@@ -2,13 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9befa364-b1fc-4354-9136-c3d701c8e5ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Tetris.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tetris_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris" beforeDir="false" afterPath="$PROJECT_DIR$/Double-Agent-Tetris" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/4 combo ring.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/Copy of main  screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/10combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/10combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/1combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/2combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/2combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/3combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/3combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/4combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/4combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/5combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/5combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/6combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/6combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/7combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/7combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/8combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/8combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/9combo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/9combo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/combo/testpic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/darkgreysquare 1p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/darkgreysquare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/gameplay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/gamescreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/help screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/help2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/help3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/intro screen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/intro screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/lightgreysquare 1p copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/lightgreysquare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/intro screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/mainhelp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/mainsetmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/quit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/00000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/00000003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/setmap1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/setmap2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/setmap3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/setmap4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/setmaps/setmap5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu pics/start.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/quit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/setmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/start.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/startmenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/blue block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/darkgreysquare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/ghost block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/green block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/lightblue block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/lightgreysquare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/linessent block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/orange block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/purple block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/red block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris blocks/yellow block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/KO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/KO.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/backtoback tspindouble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/backtoback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/holdback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/holdback2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/holdback3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/ko1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/ko2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/ko3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/sentback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/tetris star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/tetris.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/timeback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/transparent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/triple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/tspin double.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/tspin single.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/you lose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/you lose.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris icons/you win.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris numbers/decimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris sounds/battlemusic.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/assets/tetris sounds/battlemusicmp3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/envs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/envs/tetris_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/envs/tetris_interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/renderer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/tetris.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/tetris_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tetris_notebook_tutorial (1).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tetris_notebook_tutorial (1).ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +137,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2owc1eguAihTKC5DGhdqjoSTB09" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,10 +148,64 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Personal_tetris_env.executor": "Run",
+    "Python.tetris_env.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RunManager" selected="Python.Personal_tetris_env">
+    <configuration name="Personal_tetris_env" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Tetris" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Personal_tetris_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tetris_env" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Tetris" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/env" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/env/tetris_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Personal_tetris_env" />
+        <item itemvalue="Python.tetris_env" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
