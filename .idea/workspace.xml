@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9befa364-b1fc-4354-9136-c3d701c8e5ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris" beforeDir="false" afterPath="$PROJECT_DIR$/Double-Agent-Tetris" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/__init__.py" beforeDir="false" />
@@ -119,8 +121,8 @@
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/renderer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/tetris.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/tetris_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tetris_notebook_tutorial (1).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tetris_notebook_tutorial (1).ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Personal_tetris_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/Personal_tetris_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/base_model/dqnagent.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/base_model/dqnagent.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,14 +148,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Personal_tetris_env.executor": "Run",
-    "Python.tetris_env.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Personal_tetris_env.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tetris_env.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.Personal_tetris_env">
     <configuration name="Personal_tetris_env" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Tetris" />
