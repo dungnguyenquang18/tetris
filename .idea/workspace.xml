@@ -121,9 +121,6 @@
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/renderer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/tetris.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal_tetris_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/Personal_tetris_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/base_model/dqnagent.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/base_model/dqnagent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/base_model/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/base_model/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
