@@ -321,7 +321,7 @@ class DQNAgent:
 
     
 
-    def __init__(self, agent_id, state_size, mem_size=10000, discount=0.95,
+    def __init__(self, agent_id, state_size = 9, mem_size=10000, discount=0.95,
                  epsilon=1, epsilon_min=0, epsilon_stop_episode=0,
                  n_neurons=[32, 32], activations=['relu', 'relu', 'linear'],
                  loss='mse', optimizer='adam', replay_start_size=None, modelFile=None):
@@ -388,9 +388,12 @@ class DQNAgent:
         return random.random()
 
 
-    def predict_value(self, state):
+    def predict_value(self, board):
         '''Predicts the score for a certain state'''
-        return self.model.predict(state, verbose=0)[0]
+        cur_env = Tetris(board=board)
+        in4 = cur_env.get_info_from_state()
+        in4 = np.reshape(in4,[1,9])
+        return self.model.predict(in4, verbose=0)[0]
 
 
     def choose_action(self, state):
@@ -400,18 +403,21 @@ class DQNAgent:
 
         if random.random() <= self.epsilon:
             return self.random_value()
+        if len(self.queue_action == 1):
+            return self.queue_action.popleft() #action cuoi thuong la drop nen phai cho drop
+
 
         if len(self.queue_action) == 0:
             board,holding, piece = initialize(state)
-            list_poss_env = get_list_poss_env(board,piece[:2])
+            list_poss_env = get_list_poss_env(board,piece[:1])  #fix cứng block đầu tiên
             best_act_list = []
             best_score = -1e9
             for act_list, poss_env in list_poss_env.items():
-                score = self.predict_value(poss_env)
+                score = self.predict_value(poss_env.board)
                 if score > best_score:
                     best_act_list = act_list
                     best_score = score
-            for act in act_list:
+            for act in best_act_list:
                 self.queue_action.append(act)
             return self.queue_action.popleft()
 
@@ -420,22 +426,9 @@ class DQNAgent:
 
 
 
-    def best_state(self, states):
-        '''Returns the best state for a given collection of states'''
-        max_value = None
-        best_state = None
 
-        if random.random() <= self.epsilon:
-            return random.choice(list(states))
 
-        else:
-            for state in states:
-                value = self.predict_value(np.reshape(state, [1, self.state_size]))
-                if not max_value or value > max_value:
-                    max_value = value
-                    best_state = state
 
-        return best_state
 
 
     def train(self, batch_size=32, epochs=3):
@@ -451,7 +444,7 @@ class DQNAgent:
 
             # Get the expected score for the next states, in batch (better performance)
             next_states = np.array([x[1] for x in batch])
-            next_qs = [x[0] for x in self.model.predict(next_states)]
+            next_qs = [x[0] for x in self.predict_value(next_states)]
 
             x = []
             y = []

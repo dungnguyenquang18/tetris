@@ -502,9 +502,13 @@ if __name__ == "__main__":
         for block in list_block:
             new_list = get_possible_move_lists(possible_move_lists, block)
             possible_move_lists = deepcopy(new_list)
+
         list_poss_env = {}
         # key: move list
         # value: env
+        for list_act in possible_move_lists:
+            print(list_act)
+            print()
 
         for cur_list in possible_move_lists:
             # env_copy = env.copy()
@@ -513,7 +517,7 @@ if __name__ == "__main__":
             # Convert the list to a tuple before using it as a key
             list_poss_env[tuple(cur_list)] = env
 
-        return list_poss_env
+        # return list_poss_env
 
 
     class Agent:
@@ -529,14 +533,14 @@ if __name__ == "__main__":
     agent2 = Agent(0)
     ite = 0
     rewardsum = 0
-    for i in range(2):
+    for i in range(1):
         ite += 1
         action = agent2.choose_action()
         board, holding, pieces = initialize(state2)
-        list_poss_env = get_list_poss_env(board, pieces[:2])
-        for _, env in list_poss_env.items():  # Call the items() method to iterate
-            print(env.board)
-            print()
+        list_poss_env = get_list_poss_env(board, pieces[:1])
+        # for _, env in list_poss_env.items():  # Call the items() method to iterate
+        #     print(env.board)
+        #     print()
         state2, reward, done2, _ = env2.step(action)
         rewardsum += reward
     print(rewardsum)
