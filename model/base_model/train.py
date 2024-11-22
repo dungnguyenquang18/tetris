@@ -327,7 +327,7 @@ def get_list_poss_env(board, list_block):
 # Run dqn with Tetris
 def dqn():
     env = TetrisSingleEnv()
-    episodes = 600 # total number of episodes
+    episodes = 27 # total number of episodes
     max_steps = None # max number of steps per game (None for infinite)
     epsilon_stop_episode = 2000 # at what episode the random exploration stops
     mem_size = 1000 # maximum number of steps stored by the agent
@@ -345,13 +345,13 @@ def dqn():
 
     agent = DQNAgent( n_neurons=n_neurons, activations=activations,
                      epsilon_stop_episode=epsilon_stop_episode, mem_size=mem_size,
-                     discount=discount, replay_start_size=replay_start_size)
+                     discount=discount, replay_start_size=replay_start_size, modelFile='best.keras')
 
     log_dir = f'logs/tetris-nn={str(n_neurons)}-mem={mem_size}-bs={batch_size}-e={epochs}-{datetime.now().strftime("%Y%m%d-%H%M%S")}'
     log = CustomTensorBoard(log_dir=log_dir)
 
     scores = []
-    best_score = 0
+    best_score = max(agent.score, 0)
 
     for episode in tqdm(range(episodes)):
         current_state = env.reset()
@@ -384,8 +384,10 @@ def dqn():
                 list_poss_in4 = get_list_poss_env(cur_board, cur_pieces[:1])
                 best_in4 = agent.best_state(list_poss_in4.keys())
                 list_act = deque(best_in4)
-            
-            nxt_state, reward, done,_ = env.step(list_act.popleft())
+            nxt_state, reward, done = None, None, None
+            while len(list_act) != 0:
+                nxt_state, reward, done,_ = env.step(list_act.popleft())
+                steps += reward
             nxt_board, nxt_holding, nxt_pieces  = initialize(nxt_state)
             nxt_env = Tetris()
             nxt_env.board = nxt_board
@@ -393,10 +395,11 @@ def dqn():
             agent.add_to_memory(cur_in4, nxt_in4, reward, done)
             current_state = nxt_state
             
-            diem += reward
+            # diem += reward
             steps += 1
 
         scores.append(steps)
+        print(f'episode: {episode} / score: {steps}')
 
         # Train
         if episode % train_every == 0:
@@ -415,6 +418,8 @@ def dqn():
         if save_best_model and steps > best_score:
             print(f'Saving a new best model (score={steps}, episode={episode})')
             best_score = steps
+            with open("score.txt", "w") as file:
+                file.write(str(steps))
             agent.save_model("best.keras")
 
 

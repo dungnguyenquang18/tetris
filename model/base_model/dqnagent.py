@@ -13,6 +13,7 @@ import numpy as np
 import random
 
 
+
 class DQNAgent:
 
     
@@ -53,12 +54,18 @@ class DQNAgent:
         # load an existing model
         if modelFile is not None:
             self.model = load_model(modelFile)
+            self.score = self.read_score()
         # create a new model
         else:
             self.model = self._build_model()
+            self.score = -1e9
         
 
-
+    def read_score(self):
+        with open("score.txt", "r") as file:
+            # Đọc nội dung của tệp
+            score = float(file.read())
+            return score
     def _build_model(self):
         '''Builds a Keras deep neural network model'''
         model = Sequential()
