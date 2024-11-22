@@ -121,6 +121,9 @@
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/renderer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Double-Agent-Tetris/TetrisBattle/tetris.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/base_model/best.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model/base_model/best.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/base_model/dqnagent.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/base_model/dqnagent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/base_model/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/base_model/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +140,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/model/base_model/train.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -146,15 +152,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Personal_tetris_env.executor": "Run",
-    "Python.tetris_env.executor": "Run",
-    "Python.train.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Personal_tetris_env.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tetris_env.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.train">
     <configuration name="Personal_tetris_env" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Tetris" />
@@ -266,16 +272,6 @@
           <url>file://$PROJECT_DIR$/Personal_tetris_env.py</url>
           <line>398</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/model/base_model/train.py</url>
-          <line>291</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/model/base_model/train.py</url>
-          <line>309</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

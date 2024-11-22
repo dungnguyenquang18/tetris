@@ -321,7 +321,7 @@ def get_list_poss_env(board, list_block):
         # env will be copied in get_rating_from_move() function, so env local will be not changed
         env = get_env_from_move(board, list_block, cur_list)
         # Convert the list to a tuple before using it as a key
-        list_poss_env[tuple(cur_list)] = env
+        list_poss_env[tuple(env.get_info_from_state())] = cur_list
 
     return list_poss_env
 # Run dqn with Tetris
@@ -343,7 +343,7 @@ def dqn():
     activations = ['relu', 'relu', 'relu', 'linear'] # activation layers
     save_best_model = True # saves the best model so far at "best.keras"
 
-    agent = DQNAgent(agent_id=1, n_neurons=n_neurons, activations=activations,
+    agent = DQNAgent( n_neurons=n_neurons, activations=activations,
                      epsilon_stop_episode=epsilon_stop_episode, mem_size=mem_size,
                      discount=discount, replay_start_size=replay_start_size)
 
@@ -365,8 +365,8 @@ def dqn():
 
         # Game
         diem = 0
+        list_act = deque()
         while not done and (not max_steps or steps < max_steps):
-            best_action = agent.choose_action(current_state)
             # state -> action
             # next_states = {tuple(v):k for k, v in env.get_next_states().items()}
             # best_state = agent.best_state(next_states.keys())
@@ -376,9 +376,23 @@ def dqn():
             #                         render_delay=render_delay)
             #
             # agent.add_to_memory(current_state, best_state, reward, done)
-            nxt_state, reward, done,_ = env.step(best_action)
+            cur_board, cur_holding, cur_pieces  = initialize(current_state)
+            cur_env = Tetris()
+            cur_env.board = cur_board
+            cur_in4 = cur_env.get_info_from_state()
+            if len(list_act) == 0:
+                list_poss_in4 = get_list_poss_env(cur_board, cur_pieces[:1])
+                best_in4 = agent.best_state(list_poss_in4.keys())
+                list_act = deque(best_in4)
+            
+            nxt_state, reward, done,_ = env.step(list_act.popleft())
+            nxt_board, nxt_holding, nxt_pieces  = initialize(nxt_state)
+            nxt_env = Tetris()
+            nxt_env.board = nxt_board
+            nxt_in4 = nxt_env.get_info_from_state()
+            agent.add_to_memory(cur_in4, nxt_in4, reward, done)
             current_state = nxt_state
-            agent.add_to_memory(current_state, nxt_state, reward, done)
+            
             diem += reward
             steps += 1
 
@@ -401,7 +415,7 @@ def dqn():
         if save_best_model and steps > best_score:
             print(f'Saving a new best model (score={steps}, episode={episode})')
             best_score = steps
-            agent.save_model("best.h5")
+            agent.save_model("best.keras")
 
 
 if __name__ == "__main__":
